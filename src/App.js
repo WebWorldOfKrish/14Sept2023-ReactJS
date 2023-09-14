@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+// 1. ImportArea
+
 import './App.css';
+import Aside from './Components/Aside';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
+import Section from './Components/Section';
+
+
+
+
+// 2. Function Definition Area
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      <Header />
+      <main>
+        <Aside />
+        <Section />
+      </main>
+      <Footer />
+    </>
   );
 }
+
+// 3. Export Area
 
 export default App;
